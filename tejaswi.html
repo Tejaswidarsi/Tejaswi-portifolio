@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="port.css">
+        <script src="tejaswi.js"></script>
+    </head>
+    <body>
+        <div id="video-container">
+            <video autoplay muted loop id="myvideo">
+                <source src="files/back.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-text">
+                <h1>Hello Everyone!</h1>
+                <h2> Welcome to my Webpage</h2>
+                <br><br>
+                <a href="#ion" >Explore</a>
+            </div>
+        </div>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#bio">Biodata</a></li>
+                    <li><a href="#feed">Feedback</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="demo">
+            <div id="ion">
+                <h2 style="font-size: 40px ; margin-top: 400px;"><b>I'm  Tejaswi Darsi,<br>a web developer <br> specializing in html,css and Js.</b></h2>
+                </div>
+                <br>
+          <div id="ani"></div>
+          <br>
+        </div>
+        <br>
+        <div id="about">
+            <div class="block">
+                <div class="row">
+                    <div class="col-1">
+                        <img src="files/me.jpg">
+                    </div>
+                    <div class="col-2">
+                      <h1 class="text">About Me  </h1>
+                      <p>Hello! I'm Tejaswi, a dedicated Web Developer with a passion for Designing web pages. With one year of experience in Edunet, I've successfully delivered projects in Edunet Foundation. My approach combines technical proficiency and creative insight, ensuring tailored solutions that exceed client expectations. When not immersed in work, I enjoy playing chess, which often inspire my professional endeavors. 
+                        Let's connect and create something amazing together!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub">Biodata</div>
+        <div id="bio">  
+            <div style="background-color:#f5ad27;width: 35%;border: 1px transparent;border-radius: 20px; height: 50%; float:left;font-family: Cambria, Cochin, Georgia, Times;font-size: 25px;">  
+                Education: 
+                <ul>
+                   <li>Little flower english medium school</li>
+                  <ul>
+                  <li>year of compeletion: 2020</li>
+                  <li>percentage: 74%</li>
+                </ul>
+                    <li>Junior Jupiter college </li>
+                  <ul>
+                       <li>year of compeletion: 2022</li>
+                        <li>percentage: 86%</li>
+                  </ul>
+                    <li>SRM AP University</li>
+                    <ul>
+                       <li>Expected year of compeletion: 2026</li>
+                        <li>percentage: 87%</li>
+                      </ul>
+                 </ul>
+
+            </div>  
+            <div style=" width:30%; height: 50%; float:left;border: 1px transparent;border-radius: 20px;font-family: Cambria, Cochin, Georgia, Times;font-size: 25px;">  
+                Skills:
+                <ul>
+                    <li>Programming Languages: C,C++</li>
+                    <li>Web development: Html,Css,Java Script</li>
+                    <li>Project Management</li>
+                    <li>Excellent Communication and Presentation Skills</li>
+                </ul>
+ 
+            </div> 
+            <div style="background-color: hsl(53, 90%, 59%); width:35%;border: 1px transparent;border-radius: 20px; height: 50%; float:left;font-family: Cambria, Cochin, Georgia, Times;font-size: 25px;">                
+              Hobbies:
+             <ul>
+            <li>Playing Chess and Solving Puzzles</li>
+             <li>Reading Bible and praying to God</li>
+              <li>Cooking and Trying New Recipes</li>
+              <li>Singing devotional songs</li>
+             </ul>
+            </div>  
+        </div> 
+        <br> 
+        <div id="feed">
+            <div class="sub">Feedback</div>
+            <form name="form1">
+                <label for="f">First Name</label>
+                <input type="text" id="f" name="firstname" placeholder="Your name..">
+            
+                <label for="l">Last Name</label>
+                <input type="text" id="l" name="lastname" placeholder="Your last name..">
+                <label for="e">Email</label>
+                <input type="text" placeholder="Enter your email id" id="e">
+                <label for="pno">Phone no.</label>
+                <input type="number" placeholder="Enter your Phone number" id="pno">
+                <label for="fd">Comment:</label>
+                <input type="text" id="fd" name="feedback" placeholder="Give your feedback..">
+                <input type="submit" value="Submit" onclick="validate(event)">
+              </form>
+        </div>
+        <br>   
+        <div class="bg-warning">
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About me</h5>
+                        <p>I am a enthusiastic web developer.I am very curious to create and design websites.</p>
+                    </div>
+                    <div id="contact">
+                        <h5>Contact</h5>
+                        <p>Email: darsitejaswi3@gmail.com</p>
+                        <p>Phone: +91 9441765348</p>
+                    </div>
+                    <div class="col-md-4">          
+                        <h5>Follow Us</h5>
+                        <ul class="list-unstyled ">
+                            <li><a href="https://www.facebook.com/yourprofile" target="_blank" class="text-white"><img src="files/fb.png"></a></li>
+                            <br>
+                            <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-white"><img src="files/in.png"></a></li>
+                            <br>
+                            <li><a href="https://twitter.com/yourprofile" target="_blank" class="text-white"><img src="files/tw.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>    
+    </body>
+</html>

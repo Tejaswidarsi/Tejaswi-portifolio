@@ -1,0 +1,205 @@
+
+            body{
+                background-image: linear-gradient(rgb(255, 55, 5),yellow);
+            }
+            #video-container {
+                height: 70%;
+                width: 100%;
+                overflow: hidden; /* Ensures the video doesn't exceed the container's bounds */
+            }
+            #myvideo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Ensures the video covers the entire container */
+            }
+
+            /*---------navigation----------*/
+            .container{
+                padding: 10px 10%;
+            }
+            nav{
+                display: flex;
+                align-items: right;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            nav  ul li{
+                display:inline-block;  
+                list-style: none;
+                margin: 10px 20px;
+                position: relative;
+            }
+            nav  ul li a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            nav  ul li a::after{
+            content:'';
+            width: 0;
+            height: 3px;
+            background: yellow;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+            }
+            nav  ul li a:hover::after{
+            width: 100%;
+            }
+            nav  ul li a:hover{
+            text-decoration: none;
+            color: #fff;
+            }
+            /*-------------*/
+            .overlay-text {
+                position: absolute;
+                top:  30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 24px;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: rgba(201, 114, 53, 0.5); /* Semi-transparent background for better readability */
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .overlay-text a{
+                border: 1px white;
+                height: 10px;
+                width: 50px;
+                background-color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 20px;
+                color: rgb(217, 151, 70);
+            }
+            .overlay-text a:hover{
+                color:white;
+                background-color: hsl(60, 94%, 53%);
+            }
+            #ion {
+           margin-right: 80px;
+           float: right;
+         color: white;
+           }
+
+           .content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+           #ani{
+            background: url(files/tej.jpeg);
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+            height: 550px;
+            width: 550px;
+            box-shadow: 0 20px 5px hwb(40 2% 10% / 0.973);
+            animation: animate 5s ease-in-out infinite;
+            margin-left: 230px;
+           }
+           @keyframes animate{
+            0%{
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 30%;
+            }
+            50%{
+                border-radius:  30% 60%  70% 40%/50% 60% 30% 60%; 
+            }
+            100%{
+                border-radius:  60%  40% 30%  70%/50% 60% 30% 60%;
+            }
+
+           }
+
+           /*------about-------*/
+           #about{
+            padding: 80px 0;
+            color:#fff;
+            font-size: 20px;
+           }
+           .row{
+            display: flex;
+            justify-content: space-between; /*----content moves aside----*/
+            flex-wrap: wrap;
+           }
+           .col-1{
+            flex-basis: 60%;
+           }
+           .col-1 img{
+           border-radius: 20px;
+           width: 510px;
+           height: 700px;
+         }
+         .col-2{
+            flex-basis: 40%;
+            padding-left: 40px;
+         }
+         .col-2 p{
+         color: black;
+         }
+         .text{
+            color: black;
+         }
+         .block{
+            padding: 10px 10%;  
+         }
+         .sub{
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            padding:  60px 60px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+         }
+         #feed {
+            padding: 80px 0;
+         }
+
+
+ form{
+    font-size: larger;
+    border-radius: 5px;
+                background-color: #ecfe78;
+                padding: 20px;
+ }
+input[type=text]
+{
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+  border-radius: 2px;
+}
+input[type=number]
+{
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+  border-radius: 2px;
+}
+ #feedback
+{
+    padding: 30px 20px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+  border-radius: 2px;
+}
+input[type=submit]{
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+    background-color: lightgreen;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
